@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+    
+      <struts>
+     
+    
+    <package name="SDMSencrypt" namespace="/" extends="struts-default">
+    <action name="encrypt" class="com.anoncrypt.actions.SdmsEncrypt">
+    <result name="success">/sdms-encrypt-success.jsp</result>
+    <result name="error">/sdms-encrypt-error.jsp</result>
+    </action> </package>
+    
+    <package name="SDMSdecrypt" namespace="/" extends="struts-default">
+    <action name="decrypt" class="com.anoncrypt.actions.SdmsDecrypt">
+    <result name="success">/sdms-decrypt-success.jsp</result>
+    <result name="error">/sdms-decrypt-error.jsp</result>
+    </action>    </package>
+    
+     
+    
+    <package name="SYMencode" namespace="/" extends="struts-default">
+    <action name="Symencrypt" class="com.anoncrypt.actions.SymEncrypt">
+    <result name="success">/sym-encrypt-success.jsp</result>
+    <result name="error">/sym-encrypt-error.jsp</result>
+    </action> </package>
+    
+    <package name="SYMdecode" namespace="/" extends="struts-default">
+    <action name="Symdecrypt" class="com.anoncrypt.actions.SymDecrypt">
+    <result name="success">/sym-decrypt-success.jsp</result>
+    <result name="error">/sym-decrypt-error.jsp</result>
+    </action>    </package>
+    
+        
+    </struts>
